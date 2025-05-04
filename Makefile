@@ -6,6 +6,8 @@ RM ?= rm -rf
 .PHONY: all
 all: unifetch
 
+unifetch: unifetch.c unifetch_config.h
+
 .PHONY: clean
 clean:
 	$(RM) unifetch
