@@ -7,6 +7,7 @@
 #include <sys/utsname.h>
 
 #include "unifetch_config.h"
+#include "config.h"
 
 #define SMALL_FORMAT					\
 	"System name: %s, kernel: %s, version: %s\n"	\
