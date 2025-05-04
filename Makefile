@@ -21,5 +21,5 @@ install: unifetch unifetch.1
 uninstall:
 	$(RM) $(DESTDIR)$(POSTFIX)/bin/unifetch
 
-README:	README.mdoc
+README: unifetch.1
 	mandoc -man -T ascii unifetch.1 | col -b > README

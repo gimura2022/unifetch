@@ -1,1 +1,10 @@
-This is small fetch for unix systems. To read manual execute "man 1 unifetch".
+()									    ()
+
+The is simple fetch for unix systems.  Print usage.  Start in small mode.
+Start in scripted mode.	 By default unifetch starts in normal mode.  In normal
+mode unifetch prints system logo from database and system info at right.  In
+smile mode unifetch prints only system info without logo.  In scripted mode
+unifetch prints only system info without describing strings.  The utility is
+compliant with the specification.
+
+									    ()
