@@ -1,0 +1,50 @@
+.Dd $Mdocdate$
+.Dt unifetch 1
+.Os
+.
+.Sh NAME
+.Nm unifetch
+.Nd simple fetch for unix systems
+.
+.Sh SYNOPSIS
+.Nm unifetch
+.Op Fl h
+.Op Fl s
+.Op Fl S
+.
+.Sh DESCRYPTION
+The
+.Nm 
+is simple fetch for unix systems.
+.Pp
+.Bl -tag -width Ds
+.It Fl h
+Print usage.
+.It Fl s
+Start in small mode.
+.It Fl S
+Start in scripted mode.
+.El
+.Pp
+By default unifetch starts in normal mode.
+In normal mode unifetch prints system logo from database and system info at right.
+In smile mode unifetch prints only system info without logo.
+In scripted mode unifetch prints only system info without describing strings.
+.
+.Sh EXIT STATUS
+.Ex -std
+.
+.Sh SEE ALSO
+.Xr uname 2
+.Xr time 3
+.Xr localtime 3
+.
+.Sh STANDARTS
+The
+.Nm
+utility is compliant with the
+.St -p1003.1-2008
+specification.
+.
+.Sh AUTHORS
+.An gimura Aq gimura0001@gmail.com

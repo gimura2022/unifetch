@@ -13,6 +13,8 @@
 
 /* unifetch - simple fetch for unix systems */
 
+#define _POSIX_VERSION 200809L	/* define posix version */
+
 #include <stdio.h>		/* include libc headers */
 #include <stdbool.h>
 #include <stdlib.h>
@@ -22,7 +24,6 @@
 #include <sys/utsname.h>
 
 #include "unifetch_config.h"	/* unifetch config with icons */
-#include "config.h"		/* autotools config */
 
 /* small fetch output format */
 #define SMALL_FORMAT					\
@@ -65,7 +66,7 @@ static const char* const* const get_logo(const char* system_name)
 }
 
 /* usage */
-#define USAGE_SMALL "usage: " PACKAGE " [-h] [-s] [-S]\n"	/* smile usage on errors */
+#define USAGE_SMALL "usage: unifetch [-h] [-s] [-S]\n"		/* smile usage on errors */
 #define USAGE							/* full usage on -h argument */ \
 	"\t[-h]\tprint help\n"									\
 	"\t[-s]\tsmall mode\n"									\
