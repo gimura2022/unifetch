@@ -18,6 +18,7 @@
 #include <stdio.h>		/* include libc headers */
 #include <stdbool.h>
 #include <stdlib.h>
+#include <string.h>
 #include <err.h>
 #include <time.h>
 #include <unistd.h>		/* include system headers */
@@ -62,6 +63,9 @@ static enum {
 /* get logo from unifetch_config.h */
 static const char* const* const get_logo(const char* system_name)
 {
+	/* math logo by system name */
+	if (strcmp(system_name, "Linux") == 0)	return linux_logo;	/* if linux use linux logo */
+
 	return unknown_logo;	/* if system name not matched show unknown logo */
 }
 
