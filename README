@@ -1,10 +1,36 @@
-()									    ()
+unifetch(1)		    General Commands Manual		   unifetch(1)
 
-The is simple fetch for unix systems.  Print usage.  Start in small mode.
-Start in scripted mode.	 By default unifetch starts in normal mode.  In normal
-mode unifetch prints system logo from database and system info at right.  In
-smile mode unifetch prints only system info without logo.  In scripted mode
-unifetch prints only system info without describing strings.  The utility is
-compliant with the specification.
+NAME
+     unifetch - simple fetch for unix systems
 
-									    ()
+SYNOPSIS
+     unifetch [-h] [-s] [-S]
+
+DESCRYPTION
+     The unifetch is simple fetch for unix systems.
+
+     -h	     Print usage.
+
+     -s	     Start in small mode.
+
+     -S	     Start in scripted mode.
+
+     By default unifetch starts in normal mode.	 In normal mode unifetch
+     prints system logo from database and system info at right.	 In smile mode
+     unifetch prints only system info without logo.  In scripted mode unifetch
+     prints only system info without describing strings.
+
+EXIT STATUS
+     The unifetch utility exits 0 on success, and >0 if an error occurs.
+
+SEE ALSO
+     uname(2) time(3) localtime(3)
+
+STANDARTS
+     The unifetch utility is compliant with the IEEE Std 1003.1-2008
+     ("POSIX.1") specification.
+
+AUTHORS
+     gimura <gimura0001@gmail.com>
+
+Debian				  May 4, 2025				Debian
