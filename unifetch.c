@@ -19,12 +19,19 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
-#include <err.h>
 #include <time.h>
 #include <unistd.h>		/* include system headers */
 #include <sys/utsname.h>
 
 #include "unifetch_config.h"	/* unifetch config with icons */
+
+/* define err function */
+static void err(int exit_status, const char* msg)
+{
+	fputs("unifetch: ", stdout);
+	perror(msg);
+	exit(exit_status);
+}
 
 /* small fetch output format */
 #define SMALL_FORMAT					\
